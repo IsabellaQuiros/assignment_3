@@ -9,14 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
   <style>
-    #nav,
-
     html {
       background-color: #181818;
       background-image: url("GEOMETRIC BACKGROUND.svg");
     }
 
-    ul {
+   .nav ul {
       list-style-type: none;
       overflow: hidden;
       position: fixed;
@@ -24,23 +22,31 @@
       margin: 0px;
     }
 
-    li a {
+    .nav li a {
       float: left;
       display: lock;
       color: white;
       padding-top: 90px;
       padding-left: 50px;
       padding-right: 50px;
-
       text-decoration: none;
       font-family: "Karla";
       font-weight: 200;
       font-size: 20px;
-
     }
 
-    li a:hover {
+    .nav li a:hover {
       color: #794DFF;
+    }
+    
+    .left-column {
+      width: 50px; 
+    }
+    
+    .right-column {
+      float: left;
+      width: 50%
+
     }
 
     h1 {
@@ -62,7 +68,7 @@
     }
   </style>
   <body>
-    <div id="nav">
+    <div class="nav">
       <ul>
         <li><img src="IQ Designs Logo.png" alt="Logo" style="float: left; width:15%; padding: 50px"></li>
         <li><a href="/">HOME</a></li>
@@ -72,11 +78,17 @@
         <li><a href="/">CONTACT</a></li>
       </ul>
     </div>
-    <img src="Profile picture.png" alt="Me!" style="float:right; width:50%; padding-top: 100; padding-bottom:300;">
+    
+ <div class="left-column">
     <h2>Hi, I am </h2>
     <h1>Isabella Quiros</h1>
     <p>
       I am digital design student at the University of Waterloo who has an eye for detail and is passionate about producing quality work.
     </p>
+     
+   </div>
+    <div class="right-column">
+       <img src="Profile picture.png" alt="Me!" style="float:right; width:50%; padding-top: 100; padding-bottom:300;">
+    </div>
   </body>
 </html>
